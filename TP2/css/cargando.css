@@ -1,0 +1,63 @@
+*:root{
+    --fuente: 'Roboto', sans-serif;
+    --color-primario:      #be4bdb;
+    --color-primarioS3:    #862e9c;
+    --color-secundario:    #7950f2;
+    --color-secundarioS3:  #5f3dc4;
+    --color-acento:        #68DB4B;
+    --color-acentoS3:      #42B725;
+    --color-negro:         #201C1C;
+    --color-grismenu:      #292424;
+    --color-grisoscuro:    #333333;
+    --color-blanco:        #E6E6E6;
+}
+
+body {
+    background-color: var(--color-grisoscuro);
+    position: relative;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.visible{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 100%);
+  top: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.no-visible {
+  display: none;
+}
+
+.load {
+  margin-top: 260px;
+  border: 6px solid var(--color-primario);
+  border-radius: 100%;
+  border-top-color: var(--color-negro);
+  border-bottom-color: var(--color-negro);
+  width: 50px;
+  height: 50px;
+  animation: loading 1.5s infinite linear;
+}
+
+.loading p {
+  color: var(--color-primario);
+  margin-top: 50px;
+}
+
+
