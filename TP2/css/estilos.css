@@ -74,6 +74,12 @@ h2 {
   font-weight: 600;
 }
 
+.texto-loader{
+  color: var(--color-blanco);
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
 .texto-boton-negro {
   color: var(--color-negro);
   font-size: 12px;
@@ -215,6 +221,8 @@ header {
   margin-top: 50px;
 }
 
+
+
 /* CONTENEDOR PAGINA REGISTRO */
 
 .containerRegistro {
@@ -227,7 +235,7 @@ header {
   text-align: center;
   margin: auto;
   margin-top: 53px;
-  margin-top: 53px;
+  margin-bottom: 53px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -241,6 +249,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-radius: 100px;
 }
 
 .noSoyRobot .check {
@@ -261,7 +270,7 @@ header {
 
 .formField {
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .inputContainer {
@@ -296,25 +305,78 @@ input:hover {
   transform: translateY(-50%);
 }
 
-.btn-main {
-  border: 1px solid var(--color-primario);
-  outline-offset: 0px;
+
+.btn-main{
   width: 213px;
   height: 50px;
-  border-radius: 100px;
-  background-color: var(--color-primario);
-  outline: none;
   margin-top: 20px;
   margin-bottom: 20px;
+  border: 2px solid;
+  border-radius: 100px;
+  cursor: pointer;
+  color: var(--color-primario);
+  border: 2px solid;
+  background:linear-gradient(to right, transparent 50%, var(--color-primario) 50%) no-repeat left / 200%;
+  transition: background-position 0.3s ease;   
+}
+.btn-main:hover{
+background-position: right;  
+border: 2px solid var(--color-primario);;
 }
 
-.btn-main-active {
-  background-color: var(--color-primario);
+.contenedor-boton-registro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn-main:hover {
-  background-color: var(--color-primarioS3);
+.boton-registro, .tick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-blanco);
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  
 }
+
+
+.boton-registro {
+  border: solid 1px var(--color-primario); 
+  border-radius: 100px;
+  width: 300px;
+  height: 45px;
+  background: var(--color-primario);
+  transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+  margin-bottom: 10px;
+}
+
+.boton-registro svg {
+  transform: rotate(180deg);
+  transition: all .5s;
+}
+
+.button__circle {
+  width: 105px;
+  height: 105px;
+  background: mediumseagreen;
+  border-radius: 50%;
+  transform: rotate(-180deg);
+  border: none;
+}
+
+.boton-registro:hover {
+  cursor: pointer;
+}
+
+.tick {
+  color: white;
+  font-size: 2em;
+  transition: all .9s;
+}
+
+
 
 .btn-buy {
   border: 1px solid var(--color-primario);
@@ -418,6 +480,135 @@ input:hover {
 
               /*MAIN CAROUSELS*/
 
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 200px;
+  padding-right: 200px;
+  background: var(--color-grisoscuro);
+  grid-area: home;
+}
+            
+main ul{
+  list-style: none;
+}
+
+.carrousel-container {
+  width: 64rem;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+
+
+.inner-carousel {
+  padding-top: 10px;
+  width: 70%;
+  height: 260px;
+  overflow: hidden;
+}
+.track {
+  display: inline-flex;
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+ 
+}
+
+
+.track .card{
+  border: solid white;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.big-card{
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+  width: 480px;
+  border-radius: 8px;
+  border: 1px solid red;
+  margin-bottom: 50px;
+}
+         
+.big-card .content-card{
+    position:absolute;
+    width: 441px;
+    height: 255px;
+    border-radius: 10px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.big-card .card-footer{
+  display: flex;
+  flex-direction: row;
+  background-color: grey;
+  padding: 10px;
+}
+            
+.big-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 8px;
+}
+.small-card{
+  height: 132px;
+  width: 214px;
+  border-radius: 15px;
+  border: 2px solid #3E1F6E;
+  display: flex;
+  position: relative;
+}   
+      
+
+            
+.small- .content-card{
+    display: none;
+    position:absolute;
+    width: 205px;
+    height: 123px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #3f1f6eb9;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+            
+.small- .content-card .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+            
+.big-card .content-card .info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+            
+.samll-card:hover:hover .content-card{
+  display: flex;
+}
+            
+.small-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius: 10px;
+}
 
 footer{
   grid-area: footer;

@@ -3,27 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/cargando.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Freejuegos.NET</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cargando.css">
+    <title>Document</title>
 </head>
 <body>
     <header>
-        <ul>
-            <li class="menu">
-                <i class="hamburguesa fa-solid fa-3x fa-bars" style="color: #fafafa;"></i>
-            </li>
-
-            <li class="container-search">
-                <img src="./images/IconoBuscar.svg" alt="Buscar">
-                <input class="input-search" type="text" placeholder="Buscar juego">
-            </li>
-            <li class="logo_pagina">
-                <a href="./index.html"><img class="logo" src="./images/LogoPagina.svg" alt="logo de la pagina"></a>
-            </li>
-        </ul>
+        <div class="header-left">
+            <div class="menu-burguer" id="btn-open">
+                <i class="hamburguesa fa-solid fa-3x fa-bars" style="color: #e6e6e6;"></i>
+            </div>
+            <figure>
+                <a href="home.html">
+                    <img class="logo-header" src="./images/LogoPagina.svg" alt="logo">
+                </a>
+            </figure>
+        </div>
+        <div class="container-search"> 
+            <img src="./images/IconoBuscar.svg" alt="search">
+            <input class="input-search" type="text" placeholder="Busca tu juego">
+            <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #e6e6e6;"></i>
+        </div>
+        
+        <div class="container-header">
+            <div class="container-btn-header">
+                <button id="btn-buy" class="btn-buy">
+                    <img src="images/IconoCarritoBlanco.svg" alt="Ver carrito">
+                </button>
+                <button id="btn-user" class="btn-user-login">
+                </button>
+            </div>
+        </div>
     </header>
+
+    <nav id="menu-user" class="menu-user">
+        <div class="side-options">
+            <p class="body-bold name-user">Luz Velez</p>
+            <a href="#">
+                 <div class="option">
+                    <img src="images/IconoCarritoBlanco.svg" alt="avatar">
+                    <p class="textoTerciario">MIS JUEGOS</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <img src="images/IconoEditarPerfil.svg" alt="mis juegos" >
+                    <p class="textoTerciario">EDITAR MI PERFIL</p>
+                </div>
+            </a>
+            <div class="option">
+                    <button class="btn-main texto-boton-blanco"><a href="index.html">CERRAR SESIÓN</a></button>
+            </div>
+        </div>
+    </nav>
     <nav class="nav-menu">
         <ul>
             <li><i class="fa-solid fa-house fa-2xl" style="color: #E6E6E6;"></i><a href="./index.html"><h2 class="blanco">Inicio</h2></a></li>
@@ -37,6 +70,51 @@
             <li><i class="fa-regular fa-gamepad fa-2xl" style="color: #fd11f4;"></i><h2 class="blanco">Simulador</h2></li>
         </ul>
     </nav>
+    <section class="cart">
+        <div id="cart" class="container-cart">
+            <div class="cart-title">
+                <p class="body-bold">Tu carrito</p>
+            </div>
+            <div class="cart-body">
+                <div class="cart-container-buys-discount">
+                    <div class="cart-buys">
+                        <div class="cart-item">
+                            <div>
+                                <div class="cart-item-img"></div>
+                                <p class="textoTerciarioBlanco">NFS Porsche Unleashed</p>
+                            </div>
+                            <div>
+                                <p class="textoTerciario">$1500</p>
+                                <img src="images/IconoBorrarJuegoCarrito.svg" alt="borrar">
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div>
+                                <div class="cart-item-img item-img-2"></div>
+                                <p class="textoTerciarioBlanco">Mortal Kombat 1</p>
+                            </div>
+                            <div>
+                                <p class="textoTerciario">$1500</p>
+                                <img src="images/IconoBorrarJuegoCarrito.svg" alt="borrar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-container-prices-btns">
+                    <div>
+                        <div class="cart-item">
+                            <p class="textoTerciarioBlanco">TOTAL</p>
+                            <p class="textoTerciario">$3000</p>
+                        </div>
+                    </div>
+                    <div class="cart-btns">
+                        <button class="btn-main texto-boton-blanco">COMPRAR</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <main>
         <section class="carousel">
@@ -54,13 +132,18 @@
                         </div>
                         <div class="card-body">
                             <div class="game-name">
-                                <h3><span class="name">4 en linea</span></h3>
+                                <h3><span class="name">Tesla vs Mercedes</span></h3>
                                 <span class="category">Estrategia</span>
                             </div>
-                            <div class="play-btn">
-                                <p class="texto-boton-negro"><a href="juego.html">JUGAR</p></a>
-                                <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i>
-                            </div>
+                            <a href="juego.html">
+                                <button class="play-btn">
+                                    <p class="texto-boton-negro-small">JUGAR</p>
+                                    <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i> 
+                                </button>
+                                <button class="small-play-btn">
+                                    <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i> 
+                                </button>
+                            </a>
                         </div>
                         <div class="card-footer">
                             <div class="rating">
@@ -85,13 +168,18 @@
                         </div>
                         <div class="card-body">
                             <div class="game-name">
-                                <h3><span class="name">4 en linea</span></h3>
+                                <h3><span class="name">GTA III</span></h3>
                                 <span class="category">Estrategia</span>
                             </div>
-                            <div class="play-btn">
-                                <p class="texto-boton-negro">JUGAR</p>
-                                <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i>
-                            </div>
+                            <a href="juego.html">
+                                <button class="play-btn">
+                                    <p class="texto-boton-negro-small">JUGAR</p>
+                                    <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i> 
+                                </button>
+                                <button class="small-play-btn">
+                                    <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i> 
+                                </button>
+                            </a>
                         </div>
                         <div class="card-footer">
                             <div class="rating">
@@ -119,10 +207,15 @@
                                 <h3><span class="name">4 en linea</span></h3>
                                 <span class="category">Estrategia</span>
                             </div>
-                            <div class="play-btn">
-                                <p class="texto-boton-negro">JUGAR</p>
-                                <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i>
-                            </div>
+                            <a href="juego.html">
+                                <button class="play-btn">
+                                    <p class="texto-boton-negro-small">JUGAR</p>
+                                    <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i> 
+                                </button>
+                                <button class="small-play-btn">
+                                    <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i> 
+                                </button>
+                            </a>
                         </div>
                         <div class="card-footer">
                             <div class="rating">
@@ -150,10 +243,15 @@
                                 <h3><span class="name">4 en linea</span></h3>
                                 <span class="category">Estrategia</span>
                             </div>
-                            <div class="play-btn">
-                                <p class="texto-boton-negro">JUGAR</p>
-                                <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i>
-                            </div>
+                            <a href="juego.html">
+                                <button class="play-btn">
+                                    <p class="texto-boton-negro-small">JUGAR</p>
+                                    <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i> 
+                                </button>
+                                <button class="small-play-btn">
+                                    <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i> 
+                                </button>
+                            </a>
                         </div>
                         <div class="card-footer">
                             <div class="rating">
@@ -181,10 +279,15 @@
                                 <h3><span class="name">4 en linea</span></h3>
                                 <span class="category">Estrategia</span>
                             </div>
-                            <div class="play-btn">
-                                <p class="texto-boton-negro">JUGAR</p>
-                                <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i>
-                            </div>
+                            <a href="juego.html">
+                                <button class="play-btn">
+                                    <p class="texto-boton-negro-small">JUGAR</p>
+                                    <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i> 
+                                </button>
+                                <button class="small-play-btn">
+                                    <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i> 
+                                </button>
+                            </a>
                         </div>
                         <div class="card-footer">
                             <div class="rating">
@@ -212,10 +315,18 @@
                                 <h3><span class="name">4 en linea</span></h3>
                                 <span class="category">Estrategia</span>
                             </div>
-                            <div class="play-btn">
-                                <p class="texto-boton-negro">JUGAR</p>
-                                <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i>
+                            <div>
+                                <a href="juego.html">
+                                    <button class="play-btn">
+                                        <p class="texto-boton-negro-small">JUGAR</p>
+                                        <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i> 
+                                    </button>
+                                    <button class="small-play-btn">
+                                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i> 
+                                    </button>
+                                </a>
                             </div>
+
                         </div>
                         <div class="card-footer">
                             <div class="rating">
@@ -256,10 +367,15 @@
                                 <h3><span class="name">Dead Isalnd 2</span></h3>
                                 <span class="category">Accion</span>
                             </div>
-                            <div class="play-btn">
-                                <p class="texto-boton-negro-small">JUGAR</p>
-                                <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i>
-                            </div>
+                            <a href="juego.html">
+                                <button class="play-btn">
+                                    <p class="texto-boton-negro-small">JUGAR</p>
+                                    <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i> 
+                                </button>
+                                <button class="small-play-btn">
+                                    <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i> 
+                                </button>
+                            </a>
                         </div>
                         <div class="small-card-footer">
                             <div class="rating">
@@ -287,10 +403,15 @@
                                 <h3><span class="name">Cities Skylines</span></h3>
                                 <span class="category">Estrategia</span>
                             </div>
-                            <div class="play-btn">
-                                <p class="texto-boton-negro-small">JUGAR</p>
-                                <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i>
-                            </div>
+                            <a href="juego.html">
+                                <button class="play-btn">
+                                    <p class="texto-boton-negro-small">JUGAR</p>
+                                    <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i> 
+                                </button>
+                                <button class="small-play-btn">
+                                    <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i> 
+                                </button>
+                            </a>
                         </div>
                         <div class="small-card-footer">
                             <div class="rating">
@@ -318,10 +439,15 @@
                                 <h3><span class="name">Company of Heroes 3</span></h3>
                                 <span class="category">Accion</span>
                             </div>
-                            <div class="play-btn">
-                                <p class="texto-boton-negro-small">JUGAR</p>
-                                <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i>
-                            </div>
+                            <a href="juego.html">
+                                <button class="play-btn">
+                                    <p class="texto-boton-negro-small">JUGAR</p>
+                                    <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i> 
+                                </button>
+                                <button class="small-play-btn">
+                                    <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i> 
+                                </button>
+                            </a>
                         </div>
                         <div class="small-card-footer">
                             <div class="rating">
@@ -349,10 +475,15 @@
                                 <h3><span class="name">Dead Space</span></h3>
                                 <span class="category">Estrategia</span>
                             </div>
-                            <div class="play-btn">
-                                <p class="texto-boton-negro-small">JUGAR</p>
-                                <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i>
-                            </div>
+                            <a href="juego.html">
+                                <button class="play-btn">
+                                    <p class="texto-boton-negro-small">JUGAR</p>
+                                    <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i> 
+                                </button>
+                                <button class="small-play-btn">
+                                    <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i> 
+                                </button>
+                            </a>
                         </div>
                         <div class="small-card-footer">
                             <div class="rating">
@@ -380,10 +511,15 @@
                                 <h3><span class="name">Driver</span></h3>
                                 <span class="category">Simulacion</span>
                             </div>
-                            <div class="play-btn">
-                                <p class="texto-boton-negro-small">JUGAR</p>
-                                <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i>
-                            </div>
+                            <a href="juego.html">
+                                <button class="play-btn">
+                                    <p class="texto-boton-negro-small">JUGAR</p>
+                                    <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i> 
+                                </button>
+                                <button class="small-play-btn">
+                                    <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i> 
+                                </button>
+                            </a>
                         </div>
                         <div class="small-card-footer">
                             <div class="rating">
@@ -411,10 +547,15 @@
                                 <h3><span class="name">Harry Potter y la Piedra Filosofal</span></h3>
                                 <span class="category">Accion</span>
                             </div>
-                            <div class="play-btn">
-                                <p class="texto-boton-negro-small">JUGAR</p>
-                                <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i>
-                            </div>
+                            <a href="juego.html">
+                                <button class="play-btn">
+                                    <p class="texto-boton-negro-small">JUGAR</p>
+                                    <i class="fa-solid fa-circle-play fa-lg" style="color: #201c1c;"></i> 
+                                </button>
+                                <button class="small-play-btn">
+                                    <i class="fa-solid fa-circle-play fa-2xl" style="color: #201c1c;"></i> 
+                                </button>
+                            </a>
                         </div>
                         <div class="small-card-footer">
                             <div class="rating">
@@ -631,15 +772,16 @@
             </nav>
         </section>
     </main>
+    
     <footer>
         <div class="lists">
             <div class="logo-footer">
-                <i class="fa-solid fa-rocket fa-3x"></i>
-                <h1>Freejuegos.NET</h1>
+                <img src="./images/LogoPagina.svg" alt="LogoPagina">
             </div>
-            <div class="footer-list">
+            <div class="footer-list textoTerciario">
                 <label for="">Juegos</label>
                 <ul>
+                    <br>
                     <li>
                         <a href="">Recomendados</a>
                     </li>
@@ -666,9 +808,10 @@
                     </li> 
                 </ul>
             </div>
-            <div class="footer-list">
+            <div class="footer-list textoTerciario">
                 <label for="">Recursos</label>
                 <ul>
+                    <br>
                     <li>
                         <a href="">Esquema de la pagina</a>
                     </li>
@@ -695,9 +838,10 @@
                     </li> 
                 </ul>
             </div>
-            <div class="footer-list">
-                <label for="">Para Evaluadores</label>
+            <div class="footer-list textoTerciario">
+                <label for="">Evaluadores</label>
                 <ul>
+                    <br>
                     <li>
                         <a href="">DEMOS</a>
                     </li>
@@ -711,16 +855,17 @@
                         <a href="">Sube tu juego</a>
                     </li>
                     <li>
-                        <a href="">Herramienta para prueba de juegos</a>
+                        <a href="">Herramienta para prueba</a>
                     </li>
                     <li>
                         <a href="">Referidos</a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-list">
+            <div class="footer-list textoTerciario">
                 <label for="">Contacto</label>
                 <ul>
+                    <br>
                     <li>
                         <p>soporte@freejuegos.net</p>
                     </li>
@@ -744,9 +889,11 @@
                     </li> 
                 </ul>
             </div>
-            <div class="footer-list">
+   
+            <div class="footer-list textoTerciario">
                 <label for="">ACERCA DE NOSOTROS</label>
                 <ul>
+                    <br>
                     <li>
                         <p>Desde 2023 somos una empresa de videojuegos online que dia a dia sigue creciendo, ofreciendo a usuarios de todo el mundo momentos de ocio con nuestra página, sumando juegos nuevos a buen precio.</p>
                         <p>Estamos orgullosos que nos sigan eligiendo!</p>
@@ -755,9 +902,16 @@
                 </ul>
             </div>
         </div>
-    </footer> 
-    <script src="js/carousel.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="./js/cargando.js"></script>
+    </footer>
+    <div class="loader-wrapper">
+        <i class="fa-solid fa-earth-americas fa-5x"></i>
+        <i class="fa-solid fa-rocket fa-3x"></i>
+        <h1 class="texto-loader">Loading: <span class="contador"></span></h1>
+    </div>
 </body>
+<script src="js/loader.js"></script>
+<script src="js/header-btns.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/carousel.js"></script>
+
 </html>

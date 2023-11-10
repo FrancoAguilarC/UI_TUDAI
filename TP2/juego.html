@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <title>Conecta 4 - Freejuegos.net</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/juego.css">
+    <title>Tesla vs Mercedes</title>
 </head>
 
 <body id="juegos">
-    <header id="header-home">
+    <header>
         <div class="header-left">
             <div class="menu-burguer" id="btn-open">
-                <img src="./images/IconoMenu.svg" alt="menu-burguer">
+                <i class="hamburguesa fa-solid fa-3x fa-bars" style="color: #e6e6e6;"></i>
             </div>
             <figure>
                 <a href="home.html">
@@ -33,9 +34,8 @@
                 </button>
             </div>
         </div>
-        
     </header>
-    
+
     <nav id="menu-user" class="menu-user">
         <div class="side-options">
             <p class="body-bold name-user">Luz Velez</p>
@@ -56,7 +56,19 @@
             </div>
         </div>
     </nav>
-
+    <nav class="nav-menu">
+        <ul>
+            <li><i class="fa-solid fa-house fa-2xl" style="color: #E6E6E6;"></i><a href="./index.html"><h2 class="blanco">Inicio</h2></a></li>
+            <li><i class="fa-regular fa-face-smile fa-2xl" style="color: #1ca0ff;"></i><h2 class="blanco">Recomendados</h2></li>
+            <li><i class="fa-regular fa-star fa-2xl" style="color: #00ddb6;"></i></i><h2 class="blanco">Gratis</h2></li>
+            <li><i class="fa-solid fa-dollar-sign fa-2xl" style="color: #00d26a;"></i><h2 class="blanco" >Premium</h2></li>
+            <li><i class="fa-solid fa-gun fa-2xl" style="color: #ffe602;"></i><h2 class="blanco">Accion</h2></li>
+            <li><i class="fa-regular fa-cube fa-2xl" style="color: #00ff1a;"></i><h2 class="blanco">Estrategia</h2></li>
+            <li><i class="fa-solid fa-bomb fa-2xl" style="color: #093fff;"></i><h2 class="blanco">Increibles</h2></li>
+            <li><i class="fa-regular fa-heart fa-2xl" style="color: #ff4d4d;"></i><h2 class="blanco">Multijugador</h2></li>
+            <li><i class="fa-regular fa-gamepad fa-2xl" style="color: #fd11f4;"></i><h2 class="blanco">Simulador</h2></li>
+        </ul>
+    </nav>
     <section class="cart">
         <div id="cart" class="container-cart">
             <div class="cart-title">
@@ -457,5 +469,8 @@
         </div>
     </footer>
 </body>
-<script src="js/juego.js"></script>
+<script src="js/hamburguesa.js"></script>
+<script src="js/menu.js"></script>
+
+<script src="js/header-btns.js"></script>
 </html>

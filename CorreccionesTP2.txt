@@ -1,9 +1,0 @@
-Navegacion------------------------------------> LISTO
-Mobile first (responsive)---------------------> LISTO 
-Animacion de carrusel-------------------------> LISTO (Existe la animacion en un hover, no pude hacer que la animacion se concatene con la accion de mostrar la siguiente card )
-Loading en home-------------------------------> LISTO
-Animacion de hover----------------------------> LISTO (boton iniciar sesion, botones de play en cards, boton de play en pagina del juego, botones para deslizar carrusel)
-Animacion de registro satisfactorio-----------> LISTO	
-Alineacion de componentes en los cards--------> LISTO (se alinearon, se soluciono la cuestion de nombres largos)
-
-
