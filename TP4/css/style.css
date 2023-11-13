@@ -1,6 +1,7 @@
 
 :root{
     --font-color: #FFFFFF;
+    --celesteDegrade: rgba(84,153,248,1);
 }
 * {
     margin: 0px;
@@ -17,14 +18,13 @@ body{
 }
 
 .stickyHeader {
-    background: linear-gradient(180deg, var(--celesteDegrade) 0%, var(--celesteDegrade) 87.91%, rgba(84,153,248,0) 100% ) ;
+    
     height: 103px;
     width: 1280px;
     position: fixed; /*Con Fixed lo dejamos fijo en la pantalla arriba de todo*/
-    /*left: 0;
-    top: 0;*/
     z-index: 3;
     transition: 0.05s;
+    background-color: var(--celesteDegrade);
 }
 
 .menuBurguerHeader {
@@ -62,6 +62,57 @@ body{
     top: 12px;
     left: 972px;
 }
+.nav-menu{
+    position: fixed;
+    top: 60px;
+    left: -500px;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--celesteDegrade);
+    transition: .5s;
+    z-index: 3;
+    padding-left: 10px;
+    padding-top: 50px;
+    
+  }
+  
+  .nav-menu ul{
+    list-style: none;
+  }
+  
+  .nav-menu ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 10px 0px 10px;
+    /*background: linear-gradient(180deg,  rgba(84,153,248,1)30%, #FD0409 70%);*/
+    
+  }
+  .nav-menu ul li:hover{
+    background: linear-gradient(0deg, #02187E 1%,  rgba(84,153,248,1)99%);
+
+  }
+  .nav-menu ul li h2{
+    margin-left: 25px;
+    color: #FFE901;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .nav-menu ul li .fa-solid{
+  margin-right: 0px;
+  }
+  .nav-menu ul li .fa-regular{
+    margin-right:0px;
+    }
+.nav-menu ul li a{
+    text-decoration: none;
+
+}
+  
+  .mostrar{
+  left: 0;
+  }
 
 .logoCentral img{
     top: 91px;
