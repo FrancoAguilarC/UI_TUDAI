@@ -12,7 +12,7 @@
 
 
 body{
-    width: 1280px;
+    
     font-family: 'Lato', sans-serif;
     
 }
@@ -26,7 +26,9 @@ body{
     transition: 0.05s;
     background-color: var(--celesteDegrade);
 }
-
+.parallax1{
+    width: 100vw;
+}
 .menuBurguerHeader {
     position: absolute;
     left: 96px;
@@ -90,7 +92,7 @@ body{
     
   }
   .nav-menu ul li:hover{
-    background: linear-gradient(0deg, #02187E 1%,  rgba(84,153,248,1)99%);
+    background: linear-gradient(45deg,rgba(84,153,248,1)10%, #02187E 80%,  rgba(84,153,248,1)10%);
 
   }
   .nav-menu ul li h2{
