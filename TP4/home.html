@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spidey and his Amazing Friends</title>
 </head>
 <body>
-    <!-- 
     <div class="loader-container" id="loaderContainer">
         <div class="loader-text" id="loaderText">Cargando... <span id="loaderPercentage">0%</span></div>
         <div class="loader-image"></div>
         <div class="loader-progress" id="loaderProgress"></div>
     </div>
-    <div class="content" id="content">para poder usar el loader de arriba -->
+    <div class="content" id="content">para poder usar el loader de arriba 
         <header class="stickyHeader">
             <div class="menuBurguerHeader" id="btn-open">
                 <div class="menu-toggle">
@@ -49,12 +48,12 @@
             <!--FONDO BLANCO DE LA SIGUIENTE PANTALLA-->
             <div class="rectanguloBlancoFondo"></div>
             <!--CONOCE A SPIDEY-->
-            <div class="divTrapezoideVioleta">
-                <img src="./images/trapezoideVioleta.svg" alt="fondo trapezoide violeta">
-                <div class="conoceaSpideyTitulo">
+            <div class="divTrapezoideVioleta" >
+                <img src="./images/trapezoideVioleta.svg" alt="fondo trapezoide violeta" id="inicio" >
+                <div class="conoceaSpideyTitulo" >
                     <h1>Conoce a Spidey y sus sorprendentes amigos</h1>
                 </div>
-                <div class="conoceaSpideyParrafo">
+                <div class="conoceaSpideyParrafo" >
                     <p>Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider (Gwen Stacey) y Miles Morales para formar el equipo de Spidey, con la ayuda del cómico pero leal robot de Spidey, TRACE-E. Si Spidey se encuentra en una situación difícil donde necesita aún más poder de superhéroe, tengan la seguridad de que un amigo de los Vengadores correrá para ayudar.</p>
                 </div>
             </div>
@@ -65,7 +64,7 @@
             <div class="divTelaranaDerecha layer animatedElement" data-depth="0.17"><img src="./images/telarañaDerecha.svg" alt="imagen telaraña derecha"></div>
             <div class="divConoceaSpideyWideGame"><img src="./images/conoceaSpideyWideGame.svg" alt="imagen conoce a Spidey"></div>
             <!--DUENDE VERDE-->
-            <div class="divDuendeVerde layer" data-depth="0.4"><img src="./images/duendeVerde.svg" alt="imagen duende verde"></div>
+            <div class="divDuendeVerde layer" data-depth="0.3"><img src="./images/duendeVerde.svg" alt="imagen duende verde"></div>
             <!--3 HISTORIAS-->
             <div class="under-b1"  id="historia">
                 <div class="ub1-images">
@@ -130,26 +129,66 @@
                 <img src="./images/vengadoresFondoArboles.svg" alt="imagen fondo vengadores arboles">
             </div>
 
-            <div class="masAmigosMasDiversion">
-                <h1>Mas amigos, mas diversión!</h1>
-            </div>
+            <section class="seccionMasAmigos" id="info">
+                <div class="width-1080 scroll-container ">
+                    <h1 class="textoNegro">Mas amigos, mas diversión!</h1>
+                    <div class="rowCont">
+                        <div class="contenedorImg">
+                            <div class="contenedor-imagenes">
+                                <div class="imgMasAmigos" id="imgMasAmigos1">
+                                    <img src="./images/amigos1.svg" id="img1" alt="">
+                                </div>
+                                <div class="imgMasAmigos" id="imgMasAmigos2">
+                                    <img src="./images/amigos2.svg" id="img2" alt="">
+                                </div>
+                                <div class="imgMasAmigos" id="imgMasAmigos3">
+                                    <img src="./images/amigos3.svg" id="img3" alt="">
+                                </div>
+                                <div class="imgMasAmigos" id="imgMasAmigos4">
+                                    <img src="./images/amigos4.svg" id="img4" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contenedor-parrafos">
+                            <div class="parrafoScroll" id="parrafo1">
+                                <h2 id="titulo1"   class="textoNegro">Mas de 100 misiones para que juegues sin parar!</h2>
+                                <p id="texto1" class="textoNegro">Tus padres, contentos. Explora el emocionante mundo de Spider-Man con mas de 100 misiones que te mantendran en 
+                                    constante accion y adrenalina. Enfrentate a desafios unicos, desentrania misterios, y ayuda a Spider-Man a mantener 
+                                    la paz en la ciudad mientras te sumerges en la piel del heroe aracnido. Tienes lo que se necesita para superar
+                                    todas las misiones y convertirte en el autentico Spider-Man?</p>
+                            </div>
+                            <div class="parrafoScroll" id="parrafo2">
+                                <h2 class="textoNegro">Escenas deslumbrantes que te sorprenderan</h2>
+                                <p class="textoNegro">Sumergete en un universo de maravillas visuales con 'Spider-Man: [nombre del juego]'.
+                                    Nuestro juego te llevara a traves de escenas deslumbrantes que te dejaran sin aliento. Desde los rascacielos
+                                    de Nueva York hasta los intrincados detalles de la vida de Peter Parker, cada rincon de este mundo te 
+                                    sorprendera. Preparate para una experiencia unica que desafiara tus expectativas y te transportara a un
+                                    asombroso viaje con el Hombre Arania</p>
+                            </div>
+                            <div class="parrafoScroll" id="parrafo3">
+                                <h2 class="textoNegro">Cada mision te dara puntos que no sirven para nada!</h2>
+                                <p class="textoNegro">Cada mision es una oportunidad para vivir 
+                                    la emocionante vida del Hombre Arania, y aunque los puntos que ganaras no tengan un proposito especifico, 
+                                    la verdadera recompensa esta en la diversion y la inmersion que experimentaras en cada desafio. No necesitas 
+                                    acumular puntos para sentirte como un autentico superheroe, ya que la adrenalina de salvar la ciudad y la emocion de las 
+                                    acrobacias en el aire son mas que suficientes. Asi que preparate para sumergirte en la accion y la aventura, sin preocuparte por los puntos, y vive 
+                                    la experiencia definitiva de Spider-Man!</p>
+                            </div>
+                            <div class="parrafoScroll" id="parrafo4">
+                                <h2 id="titulo4" class="textoNegro">Derrota a los villanos y diviertete</h2>
+                                <p id="texto4" class="textoNegro">Dominguez se lleva la Daga, diciendole que el se encargara de revertir el proceso de destruccion para reconstruir el mundo y eliminar los defectos de la humanidad. Poco despues de que
+                                    Dominguez se va con sus hombres, un tsunami destruye la isla, pero Lara y Jonah sobreviven al desastre. Sin
+                                    embargo, Lara se siente culpable por el resultado de sus acciones y comienzan a surgir tensiones entre ella y
+                                    Jonah.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
 
-            <div class="divMasAmigosColumnaIzquierda">
-                <img id="amigo1" src="./images/amigos1.svg" alt="imagen 1 mas amigos columna izquierda" class="visible">
-                <img id="amigo2" src="./images/amigos2.svg" alt="imagen 2 mas amigos columna izquierda">
-                <img id="amigo3" src="./images/amigos3.svg" alt="imagen 3 mas amigos columna izquierda">
-                <img id="amigo4" src="./images/amigos4.svg" alt="imagen 4 mas amigos columna izquierda">
-            </div>
-            <div class="divMasAmigosColumnaDerecha">
-                <h2 id="titulo1" class="textoNegro">Mas de 100 misiones para que juegues sin parar!</h2>
-                <p id="parrafo1" class="textoNegro">Tus padres, contentos. Explora el emocionante mundo de Spider-Man con más de 100 misiones que te mantendrán en constante acción y adrenalina. Enfréntate a desafíos únicos, desentraña misterios, y ayuda a Spider-Man a mantener la paz en la ciudad mientras te sumerges en la piel del héroe arácnido. ¿Tienes lo que se necesita para superar todas las misiones y convertirte en el auténtico Spider-Man?</p>
-                <h2 id="titulo2" class="textoNegro">Escenas deslumbrantes que te sorprenderán</h2>
-                <p id="parrafo2" class="textoNegro">Sumérgete en un universo de maravillas visuales con 'Spider-Man: [nombre del juego]'. Nuestro juego te llevará a través de escenas deslumbrantes que te dejarán sin aliento. Desde los rascacielos de Nueva York hasta los intrincados detalles de la vida de Peter Parker, cada rincón de este mundo te sorprenderá. Prepárate para una experiencia única que desafiará tus expectativas y te transportará a un asombroso viaje con el Hombre Araña.</p>
-                <h2 id="titulo3" class="textoNegro">Cada misión te dará puntos que no sirven para nada! </h2>
-                <p id="parrafo3" class="textoNegro">Cada misión es una oportunidad para vivir la emocionante vida del Hombre Araña, y aunque los puntos que ganarás no tengan un propósito específico, la verdadera recompensa está en la diversión y la inmersión que experimentarás en cada desafío. No necesitas acumular puntos para sentirte como un auténtico superhéroe, ya que la adrenalina de salvar la ciudad y la emoción de las acrobacias en el aire son más que suficientes. ¡Así que prepárate para sumergirte en la acción y la aventura, sin preocuparte por los puntos, y vive la experiencia definitiva de Spider-Man!</p>
-                <h2 id="titulo4" class="textoNegro">Derrota a los villanos y diviértete</h2>
-                <p id="parrafo4" class="textoNegro">la diversión está asegurada mientras te enfrentas a los infames villanos de la ciudad de Nueva York. Enfréntate a desafíos épicos, combate a tus enemigos más temibles y disfruta de una experiencia llena de acción y emoción. Cada encuentro con los villanos te sumergirá en una batalla trepidante y te llevará más cerca de convertirte en el auténtico Hombre Araña. Así que, ¿estás listo para derrotar a los villanos y sumergirte en la aventura definitiva de Spider-Man?"</p>
-            </div>
+
 
             <div class="unGranPoderConlleva">
                 <h1>”un gran poder conlleva una gran responsabilidad”</h1>
@@ -179,7 +218,7 @@
             <div class="divCiudadFocusFinal">
                 <img src="./images/ciudadFocusFinal.svg" alt="imagen focus final ciudad">
             </div>
-            <div class="loUltimoDeSpidey">
+            <div class="loUltimoDeSpidey" id="suscribete">
                 <h1>Lo último de SPIDEY Y SUS AMIGOS en tu buzón de correo electrónico</h1>
             </div>
             
@@ -227,16 +266,16 @@
         <footer>
             
         </footer>
-    <!--</div> -->
+    </div> 
     
 </body>
-<!--<script src="./js/loader.js"></script>-->
+<script src="./js/loader.js"></script>
 <script src="./js/header.js"></script>
-<script src="/js/burguer-menu.js"></script>
 <script src="./js/parallax.js"></script>
 <script src="./js/parallaxMouseMove.js"></script>
 <script src="./js/3personajes.js"></script>
 <script src="./js/3cardsFadeIn.js"></script>
 <script src="./js/masAmigos.js"></script>
-<script src="./js/spritesheet.js"></script>
+<script src="./js/burguer-menu.js"></script>
+<script src="./js/sticky.js"></script>
 </html>
