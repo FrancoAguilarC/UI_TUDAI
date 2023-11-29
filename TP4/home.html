@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spidey and his Amazing Friends</title>
+</head>
+<body>
+    <div class="loader-container" id="loaderContainer">
+        <div class="loader-text" id="loaderText">Cargando... <span id="loaderPercentage">0%</span></div>
+        <div class="loader-image"></div>
+        <div class="loader-progress" id="loaderProgress"></div>
+    </div>
+    <div class="content" id="content">para poder usar el loader de arriba 
+        <header class="stickyHeader">
+            <div class="menuBurguerHeader" id="btn-open">
+                <div class="menu-toggle">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="logoCentral" id="logoCentral">
+                <img src="./images/logoGrande.png" alt="logo central header spidey">
+            </div>
+            <div class="botonComprar botonComprarChico textoBoton">COMPRAR</div>
+    </header>
+    <nav class="nav-menu">
+        <ul>
+            <li data-index="0" class="animar"><i class="fa-solid fa-house fa-xl" style="color: #FFFFFF;"></i><a href="#inicio"><h2>Inicio</h2></a></li>
+            <li data-index="1" class="animar"><i class="fa-solid fa-book fa-xl" style="color: #FFFFFF;"></i><a href="#historia"><h2>Historia</h2></a></li>
+            <li data-index="2" class="animar"><i class="fa-solid fa-circle-info fa-xl" style="color: #FFFFFF;"></i><a href="#info"><h2>Info de Juego</h2></a></li>
+            <li data-index="3" class="animar"><i class="fa-solid fa-thumbs-up fa-xl" style="color: #FFFFFF;"></i><a href="#suscribete"><h2>Suscribete</h2></a></li>
+        </ul>
+    </nav>
+
+        <main>
+            <div class="divNubeFondo"><img src="./images/fondoNubes.svg" alt="fondo nube"></div>
+            <!--EFDIFICIOS-->
+            <div class="divEdificioIzquierda layer" data-depth="0.06"><img src="./images/edificioIzquierda.png" alt="edificio izquierda blur"></div>
+            <div class="divEdificioMedio layer" data-depth="0.04"><img src="./images/edificioMedio.png" alt="edificio medio blur"></div>              <!--con layer y data depth le damos el parallax-->
+            <div class="divEdificioDerecha layer" data-depth="0.08"><img src="./images/edificioDerecha.png" alt="edificio derecha blur"></div>
+            <!--HERO LADOS-->
+            <div class="divHeroeIzquierda animatedElement layer " id="heroeIzquierda" data-depth="0.17"><img src="./images/heroeIzquierda.svg" alt="imagen heroe izquierda"></div>          
+            <div class="divHeroeDerecha animatedElement layer " id="heroeDerecha" data-depth="0.17"><img src="./images/heroeDerecha.svg" alt="imagen heroe derecha"></div>
+            <!--FONDO BLANCO DE LA SIGUIENTE PANTALLA-->
+            <div class="rectanguloBlancoFondo"></div>
+            <!--CONOCE A SPIDEY-->
+            <div class="divTrapezoideVioleta" >
+                <img src="./images/trapezoideVioleta.svg" alt="fondo trapezoide violeta" id="inicio" >
+                <div class="conoceaSpideyTitulo" >
+                    <h1>Conoce a Spidey y sus sorprendentes amigos</h1>
+                </div>
+                <div class="conoceaSpideyParrafo" >
+                    <p>Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider (Gwen Stacey) y Miles Morales para formar el equipo de Spidey, con la ayuda del cómico pero leal robot de Spidey, TRACE-E. Si Spidey se encuentra en una situación difícil donde necesita aún más poder de superhéroe, tengan la seguridad de que un amigo de los Vengadores correrá para ayudar.</p>
+                </div>
+            </div>
+            <!--HERO MEDIO-->
+            <div class="divHeroeMedio animatedElement layer" id="heroeMedio" data-depth="0.05"><img src="./images/heroeMedio.svg" alt="imagen heroe medio"></div>  
+            <!--TELARANA-->
+            <div class="divTelaranaIzquierda layer" data-depth="0.05"><img src="./images/telarañaIzquierda.svg" alt="imagen telaraña izquierda"></div>
+            <div class="divTelaranaDerecha layer animatedElement" data-depth="0.17"><img src="./images/telarañaDerecha.svg" alt="imagen telaraña derecha"></div>
+            <div class="divConoceaSpideyWideGame"><img src="./images/conoceaSpideyWideGame.svg" alt="imagen conoce a Spidey"></div>
+            <!--DUENDE VERDE-->
+            <div class="divDuendeVerde layer" data-depth="0.3"><img src="./images/duendeVerde.svg" alt="imagen duende verde"></div>
+            <!--3 HISTORIAS-->
+            <div class="under-b1"  id="historia">
+                <div class="ub1-images">
+                    <figure class="ub1-img">
+                        <img class="ub1-img1 imagenHistoria" src="./images/historia1.svg" alt="imagen historia 1">
+                    </figure>
+                    <figure class="ub1-img">
+                        <img class="ub1-img2 imagenHistoria" src="./images/historia2.svg" alt="imagen historia 2">
+                    </figure>
+                    <figure class="ub1-img">
+                        <img class="ub1-img3 imagenHistoria" src="./images/historia3.svg" alt="imagen historia 3">
+                    </figure>
+                </div>
+                <div class="ub1-text">
+                    <p class="pOculto historiaTexto1">Peter Parker, un joven huérfano neoyorquino que adquiere superpoderes después de ser mordido por una araña radiactiva,​ y cuya ideología como héroe se ve reflejada primordialmente en la expresión ”un gran poder conlleva una gran responsabilidad”.</p>
+                    <p class="pOculto historiaTexto2">Tras la muerte de Peter Parker, es quien toma la identidad de 
+                        Spider-Man. 
+                        La elección del presidente Barack Obama en enero de 2009, fue una fuente de inspiración para el cambio de etnicidad de Spider-Man.</p>
+                    <p class="pOculto historiaTexto3">El personaje es una variante de El Hombre Araña, una versión de universo alternativo de Gwen Stacy. Ella reside en la "Tierra-65", donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue mordida por la Araña Radiactiva</p>
+                </div>
+            </div>
+            <!--TRAPEZOIDE GHOST-->
+            <div class="divTrapezoideGhost">
+                <img src="./images/trapezoideGhost.svg" alt="fondo trapezoide ghost gwen stacy">
+            </div>
+            <!--STACKING 3 IMAGENES GHOST-->
+            <div class="divGhostStackImagen1 layer" data-depth="0.03">
+                <img src="./images/ghostStackImagen1.svg" alt="imagen 1 ghost gwen stacy">
+            </div>
+            <div class="divGhostStackImagen2 layer" data-depth="0.06">
+                <img src="./images/ghostStackImagen2.svg" alt="imagen 2 ghost gwen stacy">
+            </div>
+            <div class="divGhostStackImagen3 layer" data-depth="0.09">
+                <img src="./images/ghostStackImagen3.svg" alt="imagen 3 ghost gwen stacy">
+            </div>
+
+            <div class="losVengadoresTitulo">
+                <h1>Los vengadores acompañando tu aventura</h1>
+            </div>
+
+            <div class="divTrapezoideBlanco">
+                <img src="./images/trapezoideBlanco.svg" alt="imagen fondo trapezoide blanco">
+            </div>
+            
+            <!--IMAGENES VENGADORES EN PARALLAX MOUSE OVER-->
+           
+                <div class="parallax-container" id="parallaxContainer">
+                    <div class="parallax-layer" data-depth="0.1"><img src="./images/vengadoresFondoNubes.svg" alt="imagen fondo vengadores nubes"></div>
+                    <div class="parallax-layer" data-depth="0.3"><img src="./images/vengadoresFondoArboles.svg" alt="imagen fondo vengadores arboles"></div>
+                    <div class="parallax-layer vengadorHulk" data-depth="0.5"><img src="./images/hulk.svg" alt="imagen fondo vengadores hulk"></div>
+                    <div class="parallax-layer" data-depth="0.7"><img src="./images/vengadoresFondoPasto.svg" alt="imagen fondo vengadores pasto"></div>
+                    <div class="parallax-layer vengador1" data-depth="0.8"><img src="./images/vengador1.svg" alt="imagen fondo vengador 1"></div>
+                    <div class="parallax-layer vengador2" data-depth="0.9"><img src="./images/vengador2.png" alt="imagen fondo vengador 2"></div>
+                </div>
+           
+            
+        
+            <div class="divImagenVengadores">
+                <img src="./images/vengadoresFondoNubes.svg" alt="imagen fondo vengadores nubes">
+            </div>
+            <div class="divImagenVengadores">
+                <img src="./images/vengadoresFondoArboles.svg" alt="imagen fondo vengadores arboles">
+            </div>
+
+            <section class="seccionMasAmigos" id="info">
+                <div class="width-1080 scroll-container ">
+                    <h1 class="textoNegro">Mas amigos, mas diversión!</h1>
+                    <div class="rowCont">
+                        <div class="contenedorImg">
+                            <div class="contenedor-imagenes">
+                                <div class="imgMasAmigos" id="imgMasAmigos1">
+                                    <img src="./images/amigos1.svg" id="img1" alt="">
+                                </div>
+                                <div class="imgMasAmigos" id="imgMasAmigos2">
+                                    <img src="./images/amigos2.svg" id="img2" alt="">
+                                </div>
+                                <div class="imgMasAmigos" id="imgMasAmigos3">
+                                    <img src="./images/amigos3.svg" id="img3" alt="">
+                                </div>
+                                <div class="imgMasAmigos" id="imgMasAmigos4">
+                                    <img src="./images/amigos4.svg" id="img4" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contenedor-parrafos">
+                            <div class="parrafoScroll" id="parrafo1">
+                                <h2 id="titulo1"   class="textoNegro">Mas de 100 misiones para que juegues sin parar!</h2>
+                                <p id="texto1" class="textoNegro">Tus padres, contentos. Explora el emocionante mundo de Spider-Man con mas de 100 misiones que te mantendran en 
+                                    constante accion y adrenalina. Enfrentate a desafios unicos, desentrania misterios, y ayuda a Spider-Man a mantener 
+                                    la paz en la ciudad mientras te sumerges en la piel del heroe aracnido. Tienes lo que se necesita para superar
+                                    todas las misiones y convertirte en el autentico Spider-Man?</p>
+                            </div>
+                            <div class="parrafoScroll" id="parrafo2">
+                                <h2 class="textoNegro">Escenas deslumbrantes que te sorprenderan</h2>
+                                <p class="textoNegro">Sumergete en un universo de maravillas visuales con 'Spider-Man: [nombre del juego]'.
+                                    Nuestro juego te llevara a traves de escenas deslumbrantes que te dejaran sin aliento. Desde los rascacielos
+                                    de Nueva York hasta los intrincados detalles de la vida de Peter Parker, cada rincon de este mundo te 
+                                    sorprendera. Preparate para una experiencia unica que desafiara tus expectativas y te transportara a un
+                                    asombroso viaje con el Hombre Arania</p>
+                            </div>
+                            <div class="parrafoScroll" id="parrafo3">
+                                <h2 class="textoNegro">Cada mision te dara puntos que no sirven para nada!</h2>
+                                <p class="textoNegro">Cada mision es una oportunidad para vivir 
+                                    la emocionante vida del Hombre Arania, y aunque los puntos que ganaras no tengan un proposito especifico, 
+                                    la verdadera recompensa esta en la diversion y la inmersion que experimentaras en cada desafio. No necesitas 
+                                    acumular puntos para sentirte como un autentico superheroe, ya que la adrenalina de salvar la ciudad y la emocion de las 
+                                    acrobacias en el aire son mas que suficientes. Asi que preparate para sumergirte en la accion y la aventura, sin preocuparte por los puntos, y vive 
+                                    la experiencia definitiva de Spider-Man!</p>
+                            </div>
+                            <div class="parrafoScroll" id="parrafo4">
+                                <h2 id="titulo4" class="textoNegro">Derrota a los villanos y diviertete</h2>
+                                <p id="texto4" class="textoNegro">Dominguez se lleva la Daga, diciendole que el se encargara de revertir el proceso de destruccion para reconstruir el mundo y eliminar los defectos de la humanidad. Poco despues de que
+                                    Dominguez se va con sus hombres, un tsunami destruye la isla, pero Lara y Jonah sobreviven al desastre. Sin
+                                    embargo, Lara se siente culpable por el resultado de sus acciones y comienzan a surgir tensiones entre ella y
+                                    Jonah.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+
+
+            <div class="unGranPoderConlleva">
+                <h1>”un gran poder conlleva una gran responsabilidad”</h1>
+            </div>
+            <div class="botonComprar botonComprarGrande textoBoton">COMPRAR AHORA</div>
+
+            <div class="divTrapezoideBlancoUltimo">
+                <img src="./images/trapezoideBlancoFinal.svg" alt="imagen fondo trapezoide blanco ultimo">
+            </div>
+
+            <div id="contenedor">
+                <div class="personaje1">
+                    <img id="imagen1" class="imagen" data-depth="2"src="./images/personaje1.svg" alt="Imagen personaje 1" onmouseover="hoverImage(this, './images/fondoPersonaje1.svg')">
+                </div>
+                <div class="personaje2">
+                    <img id="imagen2" class="imagen"  data-depth="1"src="./images/personaje2.svg" alt="Imagen personaje 2" onmouseover="hoverImage(this, './images/fondoPersonaje2.svg')">
+                </div>
+                <div class="personaje3">
+                    <img id="imagen3" class="imagen"  data-depth="3" src="./images/personaje3.svg" alt="Imagen personaje 3" onmouseover="hoverImage(this, './images/fondoPersonaje3.svg')">
+                </div>
+            </div>
+
+            <div class="divFondoNubeUltimo">
+                <img src="./images/nubesCiudadFondo.svg" alt="imagen fondo nubes ciudad ultimo">
+                
+            </div>
+            <div class="divCiudadFocusFinal">
+                <img src="./images/ciudadFocusFinal.svg" alt="imagen focus final ciudad">
+            </div>
+            <div class="loUltimoDeSpidey" id="suscribete">
+                <h1>Lo último de SPIDEY Y SUS AMIGOS en tu buzón de correo electrónico</h1>
+            </div>
+            
+            <div class="divCorreoSuscribirseGrupo">
+                <div class="overlapGrupo2">
+                    <div class="ingresaAquiTuCorreo">Ingresa aquí tu correo</div>
+                </div>
+                <div class="overlapGrupo1">
+                    <div class="rectangleSuscribirse"></div>
+                    <div class="suscribirse p">SUSCRIBIRSE</div>
+                </div>
+            </div>
+
+            <p class="parrafoInscribirse">
+                <span>Al inscribirse en nuestra lista de correo, nos autoriza a ponernos en contacto con usted para enviarle ofertas y actualizaciones de marketing por correo electrónico, y también acepta nuestra</span>
+                <span class="span2">Política de privacidad</span> 
+                <span> y las</span>
+                <span class="span2">Condiciones del servicio.</span> 
+            </p>
+
+            <div class="divImagenRating">
+                <img src="./images/iconoRating.svg" alt="imagen icono rating">
+            </div>
+
+            <div class="divRectanguloGrisOscuro">
+                <img src="./images/iconosConsolas.svg" alt="imagen iconos consolas">
+            </div>
+            <div class="character" id="character"></div>
+            <div class="divRectanguloGrisClaro">
+                <div class="segaAllRights">
+                    <p>
+                        <span>©SEGA. All rights reserved. SEGA is registered in the U.S. Patent and Trademark Office. SEGA, the SEGA logo and SONIC SUPERSTARS are either registered trademarks or trademarks of SEGA CORPORATION or its affiliates. All other trademarks, logos and copyrights are property of their respective owners.©2023 The LEGO Group. LEGO, the LEGO logo, the Minifigure, and the Brick and Knob configurations are trademarks and/or copyrights of the LEGO Group. All other marks and trademarks are the property of their respective owners. All rights reserved."PS", "PS5" and "PS4" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.Microsoft, the Xbox Sphere mark, the Series X logo, Xbox One, and Xbox Series X are trademarks of the Microsoft group of companies.Nintendo Switch is a trademark of NintendoEPIC GAMES and the EPIC STORE LOGO are trademarks or registered trademarks of EPIC GAMES INC.©2023 Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.The ESRB rating icons are registered trademarks of the Entertainment Software Association.<br><br>
+                            <a href="https://www.sega.com/cookiepolicy" target="_blank"><span class="span1">COOKIE POLICY</span></a>
+                            <a href="https://www.sega.com/Privacy" target="_blank"><span class="span1">PRIVACY POLICY</span></a>
+                        </span>
+                    </p>
+                </div>
+                <div class="divIconoRedes">
+                    <img src="./images/iconoRedes.svg" alt="imagen icono redes">
+                </div>
+            </div>
+
+        </main>
+        
+        <footer>
+            
+        </footer>
+    </div> 
+    
+</body>
+<script src="./js/loader.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/parallax.js"></script>
+<script src="./js/parallaxMouseMove.js"></script>
+<script src="./js/3personajes.js"></script>
+<script src="./js/3cardsFadeIn.js"></script>
+<script src="./js/masAmigos.js"></script>
+<script src="./js/burguer-menu.js"></script>
+<script src="./js/sticky.js"></script>
+</html>
