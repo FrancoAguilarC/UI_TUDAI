@@ -70,8 +70,8 @@ p{
     height: 180px;
     width: 1280px;
     position: fixed; /*Con Fixed lo dejamos fijo en la pantalla arriba de todo*/
-    /*left: 0;
-    top: 0;*/
+    
+    top: 0;
     z-index: 3;
     transition: 0.05s;
 }
@@ -219,6 +219,7 @@ p{
     z-index: 3;
     padding-left: 10px;
     padding-top: 50px;
+    margin-top: 17px;
     
   }
   
